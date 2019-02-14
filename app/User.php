@@ -10,6 +10,12 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    protected $attributes = [
+        'firstname' => 'John',
+        'lastname' => 'Doe',
+        'email' => 'john@example.com',
+    ];
+
     /**
      * The attributes that are mass assignable.
      *
