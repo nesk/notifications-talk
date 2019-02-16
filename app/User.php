@@ -38,4 +38,19 @@ class User extends Authenticatable
     {
         return env('SLACK_HOOK');
     }
+
+    public function getBatchRestApiKeyAttribute()
+    {
+        return env('BATCH_REST_API_KEY');
+    }
+
+    public function getBatchApiKeyAttribute()
+    {
+        return env('BATCH_API_KEY');
+    }
+
+    public function getBatchPushTokenAttribute()
+    {
+        return env('BATCH_PUSH_TOKEN');
+    }
 }
